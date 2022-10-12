@@ -1,5 +1,5 @@
 body {
-  font-family: "Cormorant Garamond","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  font-family: Arial,sans-serif;
   font-size: 14px;
   line-height: 1.8;
   letter-spacing: .8px;
@@ -36,13 +36,21 @@ li {
  レイアウト
 ---------------------------------*/
 .section {
-  padding: 100px 0;
+  padding: 70px 0;
 }
 
 .inner {
   max-width: 1340px;
   margin: 0 auto;
   padding: 0 40px;
+}
+
+.w60 {
+    width: 60px;
+}
+
+.w100 {
+    width: 100px;
 }
 
 /*--------------------------------
@@ -54,7 +62,7 @@ li {
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: .1em;
-  color: #f5b5d5;
+  color: #a9a9a9;
 }
 
 .lead {
@@ -68,12 +76,13 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 65vh;
+  /*height: 65vh;*/
   text-align: center;
 }
 
 .header-inner {
   padding: 0 40px;
+  padding-top: 40px;
 }
 
 .header-title {
@@ -85,9 +94,10 @@ li {
 }
 .header-subtitle {
   font-family: "Amatic SC", cursive;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1;
   letter-spacing: .08em;
+  padding-bottom: 20px;
 }
 
 /*--------------------------------
@@ -131,6 +141,10 @@ li {
   background-color: #fff;
 }
 
+.gnav-shaddoow {
+  box-shadow: 0px 4px 4px rgba(0,0,0,.38);
+}
+
 .gnav-inner {
   padding: 15px 40px;
 }
@@ -158,6 +172,7 @@ li {
 
 .gnav-item a:hover {
   opacity: .8;
+  color: #00A500;
 }
 
 /*--------------------------------
@@ -230,6 +245,14 @@ li {
   margin-bottom: 3px;
 }
 
+
+
+.skill-table {
+    border-radius: 15px;
+    border: solid 1px;
+    padding: 10px;
+ }
+
 /*--------------------------------
  About
 ---------------------------------*/
@@ -246,12 +269,23 @@ li {
 }
 .profile-img img {
   border-radius: 50%;
+  border: 3px solid #e6e6e6;
 }
 .profile-body {
   flex: 1;
 }
 .profile-body p:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.history-text {
+   padding-left: 13px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+.history-subtext {
+   padding-left:1em;
 }
 
 /*--------------------------------
@@ -276,7 +310,7 @@ li {
   padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #fadcea;
+  background-color: #e1fae1;
 }
 
 .page-top .material-icons-outlined {
@@ -289,13 +323,13 @@ li {
 ---------------------------------*/
 .footer {
   padding: 30px;
-  background-color: #efc4d8;
+  background-color: #808080;
 }
 
 .copyright {
   font-size: 10px;
   text-align: center;
-  color: #797979;
+  color: #FFFFFF;
 }
 
 /*--------------------------------
@@ -342,6 +376,12 @@ li {
   text-align: center;
 }
 
+  /* ロゴマーク*/
+  .logo-img {
+    width: 150px;
+    margin: 0 auto;
+  }
+
 /*media Queries 767
 ----------------------------------------------------*/
 @media screen and (max-width: 767px) {
@@ -366,7 +406,7 @@ li {
 
   /* レイアウト */
   .section {
-    padding: 60px 0;
+    padding: 30px 0;
   }
 
   .inner {
@@ -375,11 +415,12 @@ li {
 
   /*  header */
   .header {
-    height: 60vh;
+    /*  height: 60vh;*/
   }
 
   .header-inner {
     padding: 0 20px;
+    padding-top: 20px;
   }
 
   .header-title {
@@ -454,7 +495,7 @@ li {
     margin-bottom: 0;
   }
 
-  /* About */
+  /* Profile */
   .profile {
     display: block;
   }
@@ -465,7 +506,7 @@ li {
   }
 
   .profile-body p:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   /* フッター */
