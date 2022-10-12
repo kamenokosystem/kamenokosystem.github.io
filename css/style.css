@@ -254,17 +254,20 @@ li {
  }
 
 /*--------------------------------
- About
+ Profile
 ---------------------------------*/
 .profile {
-  display: flex;
   flex-wrap: wrap;
   max-width: 800px;
   margin: 0 auto;
 }
 .profile-img {
-  width: 20%;
-  margin-right: 30px;
+  width: 150px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 25px;
   border-radius: 50%;
 }
 .profile-img img {
@@ -273,6 +276,7 @@ li {
 }
 .profile-body {
   flex: 1;
+  margin-left: 30px;
 }
 .profile-body p:not(:last-child) {
   margin-bottom: 50px;
@@ -499,11 +503,16 @@ li {
   .profile {
     display: block;
   }
+  
   .profile-img {
     width: 150px;
     margin: 0 auto;
     margin-bottom: 25px;
   }
+
+.profile-body {
+  margin-left: 0px;
+}
 
   .profile-body p:not(:last-child) {
     margin-bottom: 40px;

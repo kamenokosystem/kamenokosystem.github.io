@@ -63,18 +63,11 @@
         <div class="inner">
           <h2 class="title">profile</h2>
           <div class="profile">
-            <p class="profile-img">
+            <div class="profile-img">
               <img src="img/profile.png" alt="">
-            </p>
+            </div>
             <div class="profile-body">
-              <table>
-              <tbody>
-                <tr>
-				<td class="w60">Name</td>
-				<td>宮城 健治（Miyagi Kenji）</td>
-				</tr>
-			  </tbody>
-			  </table>
+			  宮城 健治（Miyagi Kenji)  
               <p><br>
                 沖縄県出身。大学で情報工学を専攻し、2014年よりIT企業に所属。現在までシステム開発・保守等に携わってきました。また、ツールによる業務効率の改善化、サイトの改修などフロントエンドからバックエンドまでの様々な業務を経験してきました。
               </p>
@@ -305,33 +298,5 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type='text/javascript' src="js/script.js"></script>
-  <script>
-  <!--ナビゲーションバーがトップで固定された際に影をつける -->
-  const select = document.querySelector('.gnav-dummy');
-  const observer = new window.IntersectionObserver( (entry) => {
-  if (!entry[0].isIntersecting) {
-      document.querySelector('.gnav').classList.add('gnav-shaddoow');
-    } else {
-      document.querySelector('.gnav').classList.remove('gnav-shaddoow');
-    }
-  });
-  observer.observe(select);
-  </script>
-  <script>
-   <!--トップロゴのアニメーション -->
-  const div = document.querySelector('.logo-img')
-  div.animate([{opacity: '0'}, {opacity: '1'}], 1500)
-  </script>
-  <script>
-  <!--ナビゲーションのスクロールのアニメーション -->
-  $("a").click(function(){
-	var id = $(this).attr('href');
-	if(id.match(/^#/)){
-		var t = $(id).offset().top -58;
-		$('html, body').animate({scrollTop:t}, 900);
-		return false;
-	}
-});
-  </script>
 </body>
 </html>
