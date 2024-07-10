@@ -147,6 +147,9 @@ li {
 
 .gnav-inner {
   padding: 15px 40px;
+  background-image: url(../img/kamegif.gif);
+  background-size: 30px, 30px;
+  background-position: 90%;
 }
 
 .gnav-list {
